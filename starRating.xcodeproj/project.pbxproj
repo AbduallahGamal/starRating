@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8608E49D324DA3185407F5B0 /* Pods_starRating.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FF1D4C51C6176F53131E86 /* Pods_starRating.framework */; };
 		8AE6A320233821A5005D54FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6A31F233821A5005D54FE /* AppDelegate.swift */; };
 		8AE6A322233821A5005D54FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6A321233821A5005D54FE /* ViewController.swift */; };
 		8AE6A325233821A5005D54FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AE6A323233821A5005D54FE /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DDE07A74B779FC2E1FC962E /* Pods-starRating.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starRating.release.xcconfig"; path = "Target Support Files/Pods-starRating/Pods-starRating.release.xcconfig"; sourceTree = "<group>"; };
+		260CE19479321639BF4838D3 /* Pods-starRating.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starRating.debug.xcconfig"; path = "Target Support Files/Pods-starRating/Pods-starRating.debug.xcconfig"; sourceTree = "<group>"; };
 		8AE6A31C233821A5005D54FE /* starRating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starRating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE6A31F233821A5005D54FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AE6A321233821A5005D54FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		8AE6A33E233821A6005D54FE /* starRatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starRatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE6A342233821A6005D54FE /* starRatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starRatingUITests.swift; sourceTree = "<group>"; };
 		8AE6A344233821A6005D54FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95FF1D4C51C6176F53131E86 /* Pods_starRating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_starRating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8608E49D324DA3185407F5B0 /* Pods_starRating.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				8AE6A336233821A6005D54FE /* starRatingTests */,
 				8AE6A341233821A6005D54FE /* starRatingUITests */,
 				8AE6A31D233821A5005D54FE /* Products */,
+				E63AB1D56AD87E83C980B011 /* Pods */,
+				E2977EEE55A9EF318E8BE203 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +135,24 @@
 			path = starRatingUITests;
 			sourceTree = "<group>";
 		};
+		E2977EEE55A9EF318E8BE203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95FF1D4C51C6176F53131E86 /* Pods_starRating.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63AB1D56AD87E83C980B011 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				260CE19479321639BF4838D3 /* Pods-starRating.debug.xcconfig */,
+				1DDE07A74B779FC2E1FC962E /* Pods-starRating.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AE6A347233821A6005D54FE /* Build configuration list for PBXNativeTarget "starRating" */;
 			buildPhases = (
+				9D43AC587E26915217105834 /* [CP] Check Pods Manifest.lock */,
 				8AE6A318233821A5005D54FE /* Sources */,
 				8AE6A319233821A5005D54FE /* Frameworks */,
 				8AE6A31A233821A5005D54FE /* Resources */,
+				8DAB4722ECB65EC1F26881C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DAB4722ECB65EC1F26881C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-starRating/Pods-starRating-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-starRating/Pods-starRating-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-starRating/Pods-starRating-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D43AC587E26915217105834 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-starRating-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AE6A318233821A5005D54FE /* Sources */ = {
@@ -434,10 +503,12 @@
 		};
 		8AE6A348233821A6005D54FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 260CE19479321639BF4838D3 /* Pods-starRating.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = starRating/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,10 +522,12 @@
 		};
 		8AE6A349233821A6005D54FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DDE07A74B779FC2E1FC962E /* Pods-starRating.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = starRating/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

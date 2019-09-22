@@ -7,14 +7,22 @@
 //
 
 import UIKit
+import Cosmos
+import TinyConstraints
 
 class ViewController: UIViewController {
+    
+    lazy var cosmosView: CosmosView = {
+        var view = CosmosView()
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        view.addSubview(cosmosView)
+        cosmosView.centerInSuperview()
+        //cosmosView.leftToSuperview()
     }
-
-
 }
 
